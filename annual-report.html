@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2025 Annual Report | Emperor MEC Foundation</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#BF9000',
+            brandDark: '#8A6800',
+            dark: '#121212',
+            muted: '#6B7280'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .bg-grid {
+      background-size: 30px 30px;
+      background-image: radial-gradient(circle, #e5e7eb 1px, transparent 1px);
+    }
+    .hero-gradient {
+      background: linear-gradient(135deg, #BF9000 0%, #8A6800 100%);
+    }
+    .blueprint-corner {
+      position: relative;
+    }
+    .blueprint-corner::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; width: 20px; height: 20px;
+      border-top: 2px solid #BF9000; border-left: 2px solid #BF9000;
+    }
+    .chart-bar {
+      transition: width 1.5s ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-white text-dark antialiased">
+
+<header class="sticky top-0 z-50 backdrop-blur-md bg-white/80 border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center space-x-3">
+      <img src="assets/images/logo.png" alt="Logo" class="h-10 w-auto" />
+      <span class="font-bold text-xl tracking-tight uppercase">MEC <span class="text-brand">Report</span></span>
+    </div>
+    <nav class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest">
+      <a href="index.html" class="hover:text-brand transition">Home</a>
+      <a href="impact2.html" class="hover:text-brand transition">Impact</a>
+      <a href="#" class="text-brand">Annual Report</a>
+      <a href="#" class="px-4 py-2 bg-dark text-white rounded hover:bg-brand transition uppercase">Download PDF</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero-gradient text-white relative overflow-hidden">
+  <div class="absolute inset-0 opacity-10 bg-grid"></div>
+  <div class="max-w-7xl mx-auto px-6 py-32 relative z-10 text-center">
+    <div class="inline-block px-3 py-1 border border-white/30 rounded-full text-[10px] font-bold tracking-[0.3em] uppercase mb-8 bg-white/10">
+        FY 2025 Summary // Institutional Progress
+    </div>
+    <h1 class="text-5xl md:text-8xl font-black tracking-tighter leading-none uppercase mb-6">Scale. Impact. <br><span class="text-dark/20">Integrity.</span></h1>
+    <p class="max-w-2xl mx-auto text-lg text-white/90 leading-relaxed font-light italic">
+        An audit of our scientific advancements, community footprints, and fiscal responsibility throughout the 2025 calendar year.
+    </p>
+  </div>
+</section>
+
+<section class="py-20 bg-dark text-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-12 text-center">
+            <div>
+                <span class="block text-5xl font-black text-brand mb-2">14</span>
+                <span class="text-[10px] font-mono text-gray-500 uppercase tracking-widest">New Patents Filed</span>
+            </div>
+            <div>
+                <span class="block text-5xl font-black text-brand mb-2">$3.2M</span>
+                <span class="text-[10px] font-mono text-gray-500 uppercase tracking-widest">R&D Re-investment</span>
+            </div>
+            <div>
+                <span class="block text-5xl font-black text-brand mb-2">850+</span>
+                <span class="text-[10px] font-mono text-gray-500 uppercase tracking-widest">Community Users</span>
+            </div>
+            <div>
+                <span class="block text-5xl font-black text-brand mb-2">100%</span>
+                <span class="text-[10px] font-mono text-gray-500 uppercase tracking-widest">Audit Transparency</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-24 bg-white">
+    <div class="max-w-4xl mx-auto px-6">
+        <h2 class="text-[10px] font-mono font-bold text-brand uppercase tracking-[0.4em] mb-8">Letter to Stakeholders //</h2>
+        <div class="prose prose-lg text-muted italic leading-relaxed">
+            <p class="mb-8 text-xl text-dark">
+                "2025 marked a pivotal transition for the Emperor MEC. Foundation. We moved from laboratory prototype validation to wide-scale field deployment of indigenous agricultural and energy technologies."
+            </p>
+            <p class="mb-8">
+                Our commitment remains focused on the 'Indigenous Innovation' mandate. By engineering solutions within the Nigerian context, we have reduced operational costs for local cooperatives while proving that African-led STEM can compete on a global stage. This report outlines our successes and the technical challenges we are carrying into 2026.
+            </p>
+        </div>
+        <div class="mt-12 flex items-center gap-6">
+            <div class="w-16 h-[2px] bg-brand"></div>
+            <span class="font-black uppercase tracking-widest text-sm">The Executive Board of Governors</span>
+        </div>
+    </div>
+</section>
+
+<section class="py-24 bg-gray-50 bg-grid border-y border-gray-100">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-20 items-center">
+            <div class="space-y-8">
+                <h2 class="text-3xl font-black uppercase tracking-tighter">Capital Utilization</h2>
+                <p class="text-muted leading-relaxed">
+                    We maintain a lean operational structure, ensuring that the vast majority of our funding is directed toward tangible research and field-testing.
+                </p>
+                
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex justify-between text-[10px] font-bold uppercase tracking-widest mb-2">
+                            <span>Research & Development (R&D)</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+                            <div class="bg-brand h-full chart-bar" style="width: 65%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-[10px] font-bold uppercase tracking-widest mb-2">
+                            <span>Community Field Deployment</span>
+                            <span>20%</span>
+                        </div>
+                        <div class="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+                            <div class="bg-dark h-full chart-bar" style="width: 20%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-[10px] font-bold uppercase tracking-widest mb-2">
+                            <span>Institutional Overhead</span>
+                            <span>15%</span>
+                        </div>
+                        <div class="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+                            <div class="bg-gray-400 h-full chart-bar" style="width: 15%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-10 bg-white border border-gray-200 rounded-3xl blueprint-corner shadow-sm">
+                <h4 class="text-xs font-mono font-bold text-brand uppercase tracking-widest mb-6">Financial Audit Registry</h4>
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center p-4 bg-gray-50 rounded-lg">
+                        <span class="text-xs font-bold uppercase">2025 Full Financial Statement</span>
+                        <a href="#" class="text-brand text-xs font-black hover:underline">PDF &darr;</a>
+                    </div>
+                    <div class="flex justify-between items-center p-4 bg-gray-50 rounded-lg">
+                        <span class="text-xs font-bold uppercase">Compliance & Ethics Audit</span>
+                        <a href="#" class="text-brand text-xs font-black hover:underline">PDF &darr;</a>
+                    </div>
+                    <div class="flex justify-between items-center p-4 bg-gray-50 rounded-lg">
+                        <span class="text-xs font-bold uppercase">Tax Exemption Verification</span>
+                        <a href="#" class="text-brand text-xs font-black hover:underline">PDF &darr;</a>
+                    </div>
+                </div>
+                <p class="mt-6 text-[9px] text-gray-400 uppercase tracking-tight italic">
+                    Audited by independent third-party partners as of Dec 31, 2025.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-24">
+    <div class="max-w-7xl mx-auto px-6">
+        <h3 class="text-2xl font-black uppercase tracking-tighter mb-12">Historical Reports</h3>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <a href="#" class="group block p-8 border border-gray-100 rounded-2xl hover:border-brand transition">
+                <span class="text-[10px] font-mono text-gray-400 uppercase block mb-2 tracking-widest">Archive // 2024</span>
+                <h4 class="font-bold uppercase group-hover:text-brand transition">Building the Foundation</h4>
+            </a>
+            <a href="#" class="group block p-8 border border-gray-100 rounded-2xl hover:border-brand transition">
+                <span class="text-[10px] font-mono text-gray-400 uppercase block mb-2 tracking-widest">Archive // 2023</span>
+                <h4 class="font-bold uppercase group-hover:text-brand transition">Laboratory Groundwork</h4>
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-dark text-gray-300 py-16 text-center border-t border-white/10">
+    <p class="text-[10px] font-mono font-bold uppercase tracking-[0.4em] text-gray-600">
+        © 2026 Emperor MEC. Foundation // Transparency Portal
+    </p>
+</footer>
+
+</body>
+</html>

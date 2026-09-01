@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fellowships & Careers | Emperor MEC Foundation</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#BF9000',
+            brandDark: '#8A6800',
+            dark: '#121212',
+            muted: '#6B7280'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .bg-grid {
+      background-size: 30px 30px;
+      background-image: radial-gradient(circle, #e5e7eb 1px, transparent 1px);
+    }
+    .hero-gradient {
+      background: linear-gradient(135deg, #BF9000 0%, #8A6800 100%);
+    }
+    .blueprint-corner {
+      position: relative;
+    }
+    .blueprint-corner::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; width: 20px; height: 20px;
+      border-top: 2px solid #BF9000; border-left: 2px solid #BF9000;
+    }
+    .input-field {
+      @apply w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand focus:bg-white transition-all text-sm;
+    }
+    .label-mono {
+      @apply block text-[10px] font-mono font-bold uppercase tracking-widest text-brand mb-2;
+    }
+    .timeline-dot {
+      width: 12px; height: 12px;
+      background: #BF9000;
+      border: 3px solid white;
+      outline: 1px solid #BF9000;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body class="bg-white text-dark antialiased">
+
+<header class="sticky top-0 z-50 backdrop-blur-md bg-white/80 border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center space-x-3">
+      <img src="assets/images/logo.png" alt="Logo" class="h-10 w-auto" />
+      <span class="font-bold text-xl tracking-tight uppercase">MEC <span class="text-brand">Talent</span></span>
+    </div>
+    <nav class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest">
+      <a href="index.html" class="hover:text-brand transition">Home</a>
+      <a href="research-detail.html" class="hover:text-brand transition">Research</a>
+      <a href="about-us2.html" class="hover:text-brand transition">About</a>
+      <a href="#" class="text-brand">Fellowships</a>
+      <a href="contact2.html" class="hover:text-brand transition">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero-gradient text-white relative overflow-hidden">
+  <div class="absolute inset-0 opacity-10 bg-grid"></div>
+  <div class="max-w-7xl mx-auto px-6 py-28 relative z-10">
+    <div class="inline-block px-3 py-1 border border-white/30 rounded-full text-xs font-bold tracking-widest uppercase mb-6 bg-white/10">
+        Academic Cycle 2026/2027
+    </div>
+    <h1 class="text-5xl md:text-7xl font-black tracking-tighter leading-none uppercase">
+      Join the <br><span class="text-dark/30">Laboratory.</span>
+    </h1>
+    <p class="mt-8 max-w-2xl text-lg text-white/90 leading-relaxed border-l-4 border-white/50 pl-6">
+      We are looking for multidisciplinary researchers, indigenous engineers, and visionary scientists to solve Africa’s most pressing technical challenges.
+    </p>
+  </div>
+</section>
+
+<section class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="mb-16">
+        <h2 class="text-3xl font-black uppercase tracking-tighter">Active Appointment Tracks</h2>
+        <p class="text-muted mt-2">Specialized pathways for different levels of expertise.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="p-10 border border-gray-100 bg-gray-50 rounded-3xl blueprint-corner group hover:border-brand transition-all">
+        <div class="mb-6 text-brand">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="1.5" d="M12 14l9-5-9-5-9 5 9 5z"></path><path stroke-width="1.5" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path></svg>
+        </div>
+        <h3 class="text-xl font-bold uppercase tracking-tight mb-4">Post-Doctoral Fellow</h3>
+        <p class="text-sm text-muted leading-relaxed mb-6">
+            For PhD holders focusing on Robotics, Sustainable Energy, or Materials Science. Includes lab access and publishing support.
+        </p>
+        <span class="text-[10px] font-mono font-bold text-gray-400 uppercase tracking-widest">Duration: 12-24 Months</span>
+      </div>
+
+      <div class="p-10 border border-gray-100 bg-gray-50 rounded-3xl blueprint-corner group hover:border-brand transition-all">
+        <div class="mb-6 text-brand">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+        </div>
+        <h3 class="text-xl font-bold uppercase tracking-tight mb-4">Indigenous Innovator</h3>
+        <p class="text-sm text-muted leading-relaxed mb-6">
+            For local inventors with field-tested prototypes. We provide the engineering tools and scaling expertise to bring your idea to life.
+        </p>
+        <span class="text-[10px] font-mono font-bold text-gray-400 uppercase tracking-widest">Duration: Project-Based</span>
+      </div>
+
+      <div class="p-10 border border-gray-100 bg-gray-50 rounded-3xl blueprint-corner group hover:border-brand transition-all">
+        <div class="mb-6 text-brand">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a2 2 0 00-1.96 1.414l-.727 2.903a2 2 0 01-2.433 1.442 19.345 19.345 0 01-7.23-7.23 2 2 0 011.442-2.433l2.903-.727a2 2 0 001.414-1.96l-.477-2.387a2 2 0 00-.547-1.022L7.05 3.51a2 2 0 00-2.828 0L3.13 4.602c-.77.77-.944 1.954-.428 2.894A19.55 19.55 0 0016.506 19.51c.94.516 2.12.342 2.894-.428l1.092-1.092a2 2 0 000-2.828l-1.064-1.065z"></path></svg>
+        </div>
+        <h3 class="text-xl font-bold uppercase tracking-tight mb-4">Engineering Intern</h3>
+        <p class="text-sm text-muted leading-relaxed mb-6">
+            For exceptional final-year students or recent graduates looking for high-intensity hands-on experience in a research lab.
+        </p>
+        <span class="text-[10px] font-mono font-bold text-gray-400 uppercase tracking-widest">Duration: 6 Months</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-24 bg-gray-50 bg-grid border-y border-gray-100">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-20">
+        <h2 class="text-4xl font-black uppercase tracking-tighter">Selection Lifecycle</h2>
+        <p class="text-muted mt-2">A rigorous 4-stage process to identify excellence.</p>
+    </div>
+
+    
+
+    <div class="grid md:grid-cols-4 gap-8 mt-16">
+        <div class="text-center">
+            <div class="flex items-center justify-center mb-4">
+                <div class="w-10 h-10 rounded-full border-2 border-brand flex items-center justify-center font-black">1</div>
+            </div>
+            <h4 class="font-bold uppercase text-xs">Submission</h4>
+            <p class="text-[10px] text-muted mt-2">Abstract & Portfolio Transmission</p>
+        </div>
+        <div class="text-center">
+            <div class="flex items-center justify-center mb-4">
+                <div class="w-10 h-10 rounded-full border-2 border-brand flex items-center justify-center font-black">2</div>
+            </div>
+            <h4 class="font-bold uppercase text-xs">Technical Review</h4>
+            <p class="text-[10px] text-muted mt-2">Peer Evaluation of Methodology</p>
+        </div>
+        <div class="text-center">
+            <div class="flex items-center justify-center mb-4">
+                <div class="w-10 h-10 rounded-full border-2 border-brand flex items-center justify-center font-black">3</div>
+            </div>
+            <h4 class="font-bold uppercase text-xs">Defense</h4>
+            <p class="text-[10px] text-muted mt-2">Strategic Interview & Roadmap</p>
+        </div>
+        <div class="text-center">
+            <div class="flex items-center justify-center mb-4">
+                <div class="w-10 h-10 rounded-full border-2 border-brand flex items-center justify-center font-black">4</div>
+            </div>
+            <h4 class="font-bold uppercase text-xs">Appointment</h4>
+            <p class="text-[10px] text-muted mt-2">Onboarding & Lab Allocation</p>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-24 bg-white relative overflow-hidden" id="apply">
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="bg-dark text-white p-12 rounded-[2rem] relative shadow-2xl">
+        <div class="absolute top-0 right-0 p-8">
+            <span class="text-[10px] font-mono text-brand uppercase tracking-[0.3em]">SECURE_TRANSIT_ON</span>
+        </div>
+        
+        <h2 class="text-3xl font-black uppercase tracking-tighter mb-4">Fellowship Application</h2>
+        <p class="text-gray-400 text-sm mb-12">Submit your credentials and research abstract for consideration.</p>
+        
+        <form class="space-y-8">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+                <label class="label-mono text-white/50">Applicant Full Name</label>
+                <input type="text" class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm focus:border-brand outline-none" placeholder="First Last" />
+            </div>
+            <div>
+                <label class="label-mono text-white/50">Contact Email</label>
+                <input type="email" class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm focus:border-brand outline-none" placeholder="name@domain.com" />
+            </div>
+          </div>
+
+          <div>
+            <label class="label-mono text-white/50">Target Fellowship Track</label>
+            <select class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm focus:border-brand outline-none appearance-none">
+                <option>Post-Doctoral Appointment</option>
+                <option>Indigenous Innovation Fellowship</option>
+                <option>Graduate Research Internship</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="label-mono text-white/50">Research Abstract / Proposal (Brief)</label>
+            <textarea rows="5" class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm focus:border-brand outline-none" placeholder="Outline your primary research focus..."></textarea>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+                <label class="label-mono text-white/50">Curriculum Vitae (URL/Link)</label>
+                <input type="text" class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm focus:border-brand outline-none" placeholder="Link to PDF/Portfolio" />
+            </div>
+            <div class="flex items-end">
+                <button type="submit" class="w-full bg-brand text-dark font-black uppercase tracking-widest py-4 rounded-lg hover:bg-white transition-all shadow-lg text-xs">
+                    Submit Application
+                </button>
+            </div>
+          </div>
+        </form>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-dark text-gray-300 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6 py-20">
+    <div class="grid md:grid-cols-4 lg:grid-cols-5 gap-12 lg:gap-16">
+      
+      <div class="md:col-span-4 lg:col-span-2">
+        <h3 class="text-white font-black text-2xl uppercase tracking-tighter">
+          Emperor <span class="text-brand">MEC.</span>
+        </h3>
+        <p class="mt-6 text-[10px] leading-relaxed uppercase tracking-[0.2em] font-bold text-gray-500 max-w-sm">
+          An independent STEM research foundation advancing indigenous innovation and industrial-scale engineering through cross-disciplinary laboratory excellence.
+        </p>
+        <div class="mt-8 flex gap-6">
+          <a href="#" class="text-gray-500 hover:text-brand transition text-[10px] font-mono font-bold uppercase tracking-widest">Facebook</a>
+          <a href="#" class="text-gray-500 hover:text-brand transition text-[10px] font-mono font-bold uppercase tracking-widest">X (Twitter)</a>
+          <a href="#" class="text-gray-500 hover:text-brand transition text-[10px] font-mono font-bold uppercase tracking-widest">Instagram</a>
+        </div>
+      </div>
+      
+      <div>
+        <h4 class="text-white text-[10px] font-mono font-bold uppercase tracking-[0.3em] mb-8 text-brand">Institutional //</h4>
+        <ul class="space-y-4 text-[10px] font-bold uppercase tracking-[0.15em]">
+          <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+          <li><a href="governance.html" class="hover:text-white transition">Governance</a></li>
+          <li><a href="partnerships.html" class="hover:text-white transition">Partnerships</a></li>
+          <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h4 class="text-white text-[10px] font-mono font-bold uppercase tracking-[0.3em] mb-8 text-brand">Laboratory //</h4>
+        <ul class="space-y-4 text-[10px] font-bold uppercase tracking-[0.15em]">
+          <li><a href="research.html" class="hover:text-white transition">Research</a></li>
+          <li><a href="facilities.html" class="hover:text-white transition">Facilities</a></li>
+          <li><a href="fellowships.html" class="hover:text-white transition">Fellowships</a></li>
+          <li><a href="impact.html" class="hover:text-white transition">Impact</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h4 class="text-white text-[10px] font-mono font-bold uppercase tracking-[0.3em] mb-8 text-brand">Archives //</h4>
+        <ul class="space-y-4 text-[10px] font-bold uppercase tracking-[0.15em]">
+          <li><a href="dispatches.html" class="hover:text-white transition">Dispatches</a></li>
+          <li><a href="report.html" class="hover:text-white transition">Annual Report</a></li>
+          <li><a href="#" class="hover:text-white transition">Compliance</a></li>
+          <li><a href="#" class="hover:text-white transition">Ethics</a></li>
+        </ul>
+      </div>
+      
+    </div>
+    
+    <div class="mt-20 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
+      <div class="flex items-center gap-6">
+        <div class="px-4 py-2 border border-white/10 rounded flex items-center gap-3">
+          <div class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse shadow-[0_0_8px_rgba(34,197,94,0.6)]"></div>
+          <span class="text-[9px] font-mono font-bold text-gray-500 uppercase tracking-widest">Systems: Operational</span>
+        </div>
+        <div class="hidden md:block h-4 w-[1px] bg-white/10"></div>
+        <span class="text-[9px] font-mono text-gray-600 uppercase tracking-widest">Ref: OG-HUB-S26</span>
+      </div>
+      
+      <div class="text-[10px] font-mono font-bold uppercase tracking-[0.3em] text-gray-600">
+        © 2026 Emperor MEC. Foundation <span class="hidden md:inline mx-4">//</span> <span class="text-gray-700">All Intellectual Property Reserved</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Emperor MEC Foundation</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#BF9000',
+            brandDark: '#8A6800',
+            dark: '#121212',
+            muted: '#6B7280'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .bg-grid {
+      background-size: 30px 30px;
+      background-image: radial-gradient(circle, #e5e7eb 1px, transparent 1px);
+    }
+    .hero-gradient {
+      background: linear-gradient(135deg, #BF9000 0%, #8A6800 100%);
+    }
+    .blueprint-corner {
+      position: relative;
+    }
+    .blueprint-corner::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; width: 20px; height: 20px;
+      border-top: 2px solid #BF9000; border-left: 2px solid #BF9000;
+    }
+    .dna-line {
+      width: 2px;
+      background: linear-gradient(to bottom, #BF9000, transparent);
+    }
+  </style>
+</head>
+<body class="bg-white text-dark antialiased">
+
+<header class="sticky top-0 z-50 backdrop-blur-md bg-white/80 border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center space-x-3">
+      <img src="assets/images/logo.png" alt="Logo" class="h-10 w-auto" />
+      <span class="font-bold text-xl tracking-tight uppercase">MEC <span class="text-brand">Identity</span></span>
+    </div>
+    <nav class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest">
+      <a href="index.html" class="hover:text-brand transition">Home</a>
+      <a href="about-us2.html" class="text-brand">About</a>
+      <a href="research-detail.html" class="hover:text-brand transition">Research</a>
+      <a href="impact2.html" class="hover:text-brand transition">Impact</a>
+      <a href="contact2.html" class="hover:text-brand transition">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero-gradient text-white relative overflow-hidden">
+  <div class="absolute inset-0 opacity-10 bg-grid"></div>
+  <div class="max-w-7xl mx-auto px-6 py-28 relative z-10">
+    <div class="inline-block px-3 py-1 border border-white/30 rounded-full text-xs font-bold tracking-widest uppercase mb-6 bg-white/10">
+        Institutional Profile 2026
+    </div>
+    <h1 class="text-5xl md:text-7xl font-black tracking-tighter leading-none uppercase">
+      Engineering <br><span class="text-dark/30">The Future.</span>
+    </h1>
+    <p class="mt-8 max-w-2xl text-lg text-white/90 leading-relaxed border-l-4 border-white/50 pl-6">
+      Emperor MEC Foundation is an independent multidisciplinary STEM research body dedicated to pioneering indigenous innovation and scientific excellence in Africa.
+    </p>
+  </div>
+</section>
+
+<section class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-3 gap-16">
+      <div class="lg:col-span-2">
+        <h2 class="text-3xl font-black uppercase tracking-tighter mb-8">Strategic Mandate</h2>
+        <div class="space-y-6 text-muted leading-relaxed text-lg">
+          <p>
+            Established as a response to the growing need for technical self-reliance, the <span class="text-dark font-bold">Emperor MEC. Foundation</span> serves as a bridge between fundamental scientific inquiry and industrial application. We operate at the high-stakes intersection of Robotics, AI, and Sustainable Energy.
+          </p>
+          <p>
+            Our organization is structured to bypass the traditional "innovation-lag" by co-locating researchers with manufacturing tools. We don't just write papers; we build machines that work in Nigerian soil, powered by Nigerian ingenuity.
+          </p>
+        </div>
+      </div>
+      
+      <div class="p-8 bg-gray-50 border border-gray-100 rounded-2xl blueprint-corner self-start">
+        <h4 class="text-xs font-mono font-bold text-brand uppercase mb-4">Registry Info //</h4>
+        <div class="space-y-4 font-mono text-[11px] uppercase tracking-wider">
+          <div class="flex justify-between border-b border-gray-200 pb-2">
+            <span class="text-gray-400">Founded</span>
+            <span>Est. 2024</span>
+          </div>
+          <div class="flex justify-between border-b border-gray-200 pb-2">
+            <span class="text-gray-400">Headquarters</span>
+            <span>Ogun State, NG</span>
+          </div>
+          <div class="flex justify-between border-b border-gray-200 pb-2">
+            <span class="text-gray-400">Classification</span>
+            <span>STEM R&D Foundation</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-gray-400">Focus areas</span>
+            <span>AI | ROBOTICS | ENERGY</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-24 bg-gray-50 border-y border-gray-100 bg-grid">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 gap-12">
+      <div class="relative p-10 bg-white border border-gray-200 rounded-3xl group">
+        <span class="absolute top-6 right-8 text-4xl font-black text-gray-100 group-hover:text-brand/20 transition">01</span>
+        <h3 class="text-2xl font-black uppercase tracking-tighter mb-6 flex items-center gap-3">
+            <div class="w-2 h-8 bg-brand"></div> Mission
+        </h3>
+        <p class="text-muted leading-relaxed">
+          To accelerate scientific research and engineering innovation that addresses critical societal gaps, ensuring that indigenous solutions are scaled to meet global standards of excellence and competitiveness.
+        </p>
+      </div>
+      
+      <div class="relative p-10 bg-white border border-gray-200 rounded-3xl group">
+        <span class="absolute top-6 right-8 text-4xl font-black text-gray-100 group-hover:text-brand/20 transition">02</span>
+        <h3 class="text-2xl font-black uppercase tracking-tighter mb-6 flex items-center gap-3">
+            <div class="w-2 h-8 bg-dark"></div> Vision
+        </h3>
+        <p class="text-muted leading-relaxed">
+          To become the premier African catalyst for STEM-driven development, recognized globally for transforming fundamental science into localized technological autonomy.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-20">
+        <h2 class="text-4xl font-black uppercase tracking-tighter">Operating Principles</h2>
+        <p class="text-muted mt-2">The scientific and ethical framework that governs our labs.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div class="flex gap-6 group">
+        <div class="dna-line h-full"></div>
+        <div>
+            <h4 class="font-bold text-lg uppercase tracking-tight mb-2 group-hover:text-brand transition">Technical Excellence</h4>
+            <p class="text-sm text-muted leading-relaxed">We maintain uncompromising standards in peer-reviewed research and precision engineering.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-6 group">
+        <div class="dna-line h-full"></div>
+        <div>
+            <h4 class="font-bold text-lg uppercase tracking-tight mb-2 group-hover:text-brand transition">Radical Innovation</h4>
+            <p class="text-sm text-muted leading-relaxed">We prioritize high-risk, high-reward research that conventional institutions often overlook.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-6 group">
+        <div class="dna-line h-full"></div>
+        <div>
+            <h4 class="font-bold text-lg uppercase tracking-tight mb-2 group-hover:text-brand transition">Ethical Integrity</h4>
+            <p class="text-sm text-muted leading-relaxed">Complete transparency in data, financial accountability, and research ethics.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-6 group">
+        <div class="dna-line h-full"></div>
+        <div>
+            <h4 class="font-bold text-lg uppercase tracking-tight mb-2 group-hover:text-brand transition">Convergence</h4>
+            <p class="text-sm text-muted leading-relaxed">Collaborative research across disciplines to solve multi-faceted societal challenges.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-6 group">
+        <div class="dna-line h-full"></div>
+        <div>
+            <h4 class="font-bold text-lg uppercase tracking-tight mb-2 group-hover:text-brand transition">Sustainability</h4>
+            <p class="text-sm text-muted leading-relaxed">Ensuring our technological outputs contribute to long-term ecological balance.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-24 bg-dark text-white overflow-hidden relative">
+    <div class="absolute inset-0 opacity-5 bg-grid"></div>
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
+        <div>
+            <h2 class="text-4xl font-black uppercase tracking-tighter text-brand">The MEC Pedigree</h2>
+            <p class="mt-6 text-gray-400 leading-relaxed">
+                Our foundation is built on the belief that Africa's challenges require African-engineered solutions. By combining world-class academic rigour with local workshop agility, we create a unique ecosystem where "Made in Nigeria" means "World Class."
+            </p>
+            <div class="mt-10 grid grid-cols-2 gap-8 font-mono text-[10px] tracking-widest text-brand">
+                <div>// ADAPTIVE ROBOTICS</div>
+                <div>// APPLIED COMPUTER VISION</div>
+                <div>// DISTRIBUTED ENERGY</div>
+                <div>// KINETIC SYSTEMS</div>
+            </div>
+        </div>
+        <div class="relative blueprint-corner p-1 border border-white/10">
+            
+        </div>
+    </div>
+</section>
+
+<footer class="bg-dark text-gray-300 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6 py-20">
+    <div class="grid md:grid-cols-4 lg:grid-cols-5 gap-12 lg:gap-16">
+      
+      <div class="md:col-span-4 lg:col-span-2">
+        <h3 class="text-white font-black text-2xl uppercase tracking-tighter">
+          Emperor <span class="text-brand">MEC.</span>
+        </h3>
+        <p class="mt-6 text-[10px] leading-relaxed uppercase tracking-[0.2em] font-bold text-gray-500 max-w-sm">
+          An independent STEM research foundation advancing indigenous innovation and industrial-scale engineering through cross-disciplinary laboratory excellence.
+        </p>
+        <div class="mt-8 flex gap-6">
+          <a href="#" class="text-gray-500 hover:text-brand transition text-[10px] font-mono font-bold uppercase tracking-widest">Facebook</a>
+          <a href="#" class="text-gray-500 hover:text-brand transition text-[10px] font-mono font-bold uppercase tracking-widest">X (Twitter)</a>
+          <a href="#" class="text-gray-500 hover:text-brand transition text-[10px] font-mono font-bold uppercase tracking-widest">Instagram</a>
+        </div>
+      </div>
+      
+      <div>
+        <h4 class="text-white text-[10px] font-mono font-bold uppercase tracking-[0.3em] mb-8 text-brand">Institutional //</h4>
+        <ul class="space-y-4 text-[10px] font-bold uppercase tracking-[0.15em]">
+          <li><a href="about-us2.html" class="hover:text-white transition">About Us</a></li>
+          <li><a href="governance2.html" class="hover:text-white transition">Governance</a></li>
+          <li><a href="partnerships2.html" class="hover:text-white transition">Partnerships</a></li>
+          <li><a href="contact2.html" class="hover:text-white transition">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h4 class="text-white text-[10px] font-mono font-bold uppercase tracking-[0.3em] mb-8 text-brand">Laboratory //</h4>
+        <ul class="space-y-4 text-[10px] font-bold uppercase tracking-[0.15em]">
+          <li><a href="research-detail.html" class="hover:text-white transition">Research</a></li>
+          <li><a href="#" class="hover:text-white transition">Facilities</a></li>
+          <li><a href="fellowships.html" class="hover:text-white transition">Fellowships</a></li>
+          <li><a href="impact2.html" class="hover:text-white transition">Impact</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h4 class="text-white text-[10px] font-mono font-bold uppercase tracking-[0.3em] mb-8 text-brand">Archives //</h4>
+        <ul class="space-y-4 text-[10px] font-bold uppercase tracking-[0.15em]">
+          <li><a href="dispatches.html" class="hover:text-white transition">Dispatches</a></li>
+          <li><a href="annual-report.html" class="hover:text-white transition">Annual Report</a></li>
+          <li><a href="#" class="hover:text-white transition">Compliance</a></li>
+          <li><a href="#" class="hover:text-white transition">Ethics</a></li>
+        </ul>
+      </div>
+      
+    </div>
+    
+    <div class="mt-20 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
+      <div class="flex items-center gap-6">
+        <div class="px-4 py-2 border border-white/10 rounded flex items-center gap-3">
+          <div class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse shadow-[0_0_8px_rgba(34,197,94,0.6)]"></div>
+          <span class="text-[9px] font-mono font-bold text-gray-500 uppercase tracking-widest">Systems: Operational</span>
+        </div>
+        <div class="hidden md:block h-4 w-[1px] bg-white/10"></div>
+        <span class="text-[9px] font-mono text-gray-600 uppercase tracking-widest">Ref: OG-HUB-S26</span>
+      </div>
+      
+      <div class="text-[10px] font-mono font-bold uppercase tracking-[0.3em] text-gray-600">
+        © 2026 Emperor MEC. Foundation <span class="hidden md:inline mx-4">//</span> <span class="text-gray-700">All Intellectual Property Reserved</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  if(menuBtn) {
+    menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+  }
+</script>
+
+</body>
+</html>

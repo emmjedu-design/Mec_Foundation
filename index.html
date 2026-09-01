@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emperor MEC Foundation | Igniting Indigenous Innovations</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#BF9000',   // gold/mustard from logo
+            brandDark: '#a67c00',
+            dark: '#1E1E1E',
+            muted: '#6B7280'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Scientific Grid Pattern */
+    .bg-grid {
+      background-size: 30px 30px;
+      background-image: radial-gradient(circle, #e5e7eb 1px, transparent 1px);
+    }
+    .hero-gradient {
+      background: linear-gradient(135deg, #BF9000 0%, #8A6800 100%);
+    }
+    .blueprint-corner {
+      position: relative;
+    }
+    .blueprint-corner::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; width: 20px; height: 20px;
+      border-top: 2px solid #BF9000; border-left: 2px solid #BF9000;
+    }
+  </style>
+</head>
+<body class="bg-white text-dark antialiased">
+
+<header class="sticky top-0 z-50 backdrop-blur-md bg-white/80 border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center space-x-3">
+      <img src="assets/images/logo.png" alt="Logo" class="h-10 w-auto" />
+      <span class="font-bold text-xl tracking-tight uppercase">Emperor <span class="text-brand">MEC</span></span>
+    </div>
+    <nav class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest">
+      <a href="index.html" class="text-brand">Home</a>
+      <a href="about-us2.html" class="hover:text-brand transition">About</a>
+      <a href="research-detail.html" class="hover:text-brand transition">Research</a>
+      <a href="impact2.html" class="hover:text-brand transition">Impact</a>
+      <a href="contact2.html" class="hover:text-brand transition">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero-gradient bg-brand text-white">
+  <div class="max-w-7xl mx-auto px-6 py-28 text-center">
+    <img src="assets/images/logo.png" alt="Logo" class="mx-auto h-28 mb-10" />
+    <h1 class="text-5xl md:text-7xl font-black tracking-tighter leading-none">
+      Igniting Indigenous Innovations
+    </h1>
+    <p class="mt-6 text-lg max-w-3xl mx-auto text-white/90">
+      A multidisciplinary STEM research foundation advancing science, engineering, and technology for national development and global relevance.
+    </p>
+    <div class="mt-10 flex justify-center flex-wrap gap-4">
+      <a href="#" class="px-8 py-4 bg-white text-brand rounded-xl shadow font-semibold hover:bg-gray-100 transition">Explore Research</a>
+      <a href="#" class="px-8 py-4 border border-white rounded-xl font-semibold hover:bg-white hover:text-brand transition">Collaborate With Us</a>
+    </div>
+  </div>
+</section>
+
+<section class="py-24 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-black uppercase text-center tracking-tighter">Core Research Domains</h2>
+    <p class="mt-4 text-center text-muted max-w-2xl mx-auto">
+      Our work integrates advanced science and engineering disciplines to solve complex societal challenges.
+    </p>
+
+    <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div class="p-10 border rounded-2xl hover:shadow-xl transition border-gray-100 shadow-sm bg-white">
+        <h3 class="font-semibold text-lg text-brand">Artificial Intelligence & Data Science</h3>
+        <p class="mt-4 text-sm text-muted">AI-driven research for intelligent decision systems and automation.</p>
+      </div>
+      <div class="p-10 border rounded-2xl hover:shadow-xl transition border-gray-100 shadow-sm bg-white">
+        <h3 class="font-semibold text-lg text-brand">Robotics & Autonomous Systems</h3>
+        <p class="mt-4 text-sm text-muted">Next-generation robotic systems for industry and agriculture.</p>
+      </div>
+      <div class="p-10 border rounded-2xl hover:shadow-xl transition border-gray-100 shadow-sm bg-white">
+        <h3 class="font-semibold text-lg text-brand">Energy & Sustainability</h3>
+        <p class="mt-4 text-sm text-muted">Clean energy technologies and sustainable infrastructure.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="max-w-7xl mx-auto px-6 py-24">
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h2 class="text-4xl font-black uppercase tracking-tighter">About Emperor MEC. Foundation</h2>
+      <p class="mt-4 text-gray-700 leading-relaxed">
+        Headquartered in Ogun State, Nigeria, the Emperor MEC. Foundation is dedicated to reviving and developing indigenous technology to drive national development across agriculture, education, and industry.
+      </p>
+
+      <ul class="mt-8 space-y-4">
+        <li class="flex items-start gap-3">
+          <span class="font-bold text-brand">Vision:</span> 
+          <span class="text-gray-700">A Nigeria revitalised by homegrown technology.</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="font-bold text-brand">Mission:</span> 
+          <span class="text-gray-700">To research, develop, and transfer appropriate technologies to local industries and communities.</span>
+        </li>
+      </ul>
+
+      <div class="mt-8 flex gap-4">
+        <a href="contact-us2.html" class="px-6 py-3 border-2 border-brand text-brand rounded-lg font-semibold hover:bg-brand hover:text-white transition">Contact Us</a>
+        <a href="research-papers2.html" class="px-6 py-3 bg-gray-100 rounded-lg font-semibold hover:bg-gray-200 transition">Research Papers</a>
+      </div>
+    </div>
+
+    <div class="rounded-2xl border border-gray-100 shadow-xl p-8 bg-white">
+      <h3 class="font-bold text-xl mb-6">Key Focus Areas</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        
+        <div class="flex flex-col items-start gap-3">
+          <div class="p-3 bg-brand/10 text-brand rounded-lg">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9 0 4.17 2.84 7.67 6.69 8.69L12 22l2.31-1.31C18.16 19.67 21 16.17 21 12c0-4.97-4.03-9-9-9z"></path></svg>
+          </div>
+          <h4 class="font-bold">Agritech</h4>
+          <p class="text-xs text-muted">Robots, sensors, and analytics for crop productivity.</p>
+        </div>
+
+        <div class="flex flex-col items-start gap-3">
+          <div class="p-3 bg-brand/10 text-brand rounded-lg">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+          </div>
+          <h4 class="font-bold">EdTech</h4>
+          <p class="text-xs text-muted">Localised STEM curricula and maker spaces.</p>
+        </div>
+
+        <div class="flex flex-col items-start gap-3">
+          <div class="p-3 bg-brand/10 text-brand rounded-lg">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+          </div>
+          <h4 class="font-bold">Industry</h4>
+          <p class="text-xs text-muted">Small-scale manufacturing and process optimisation.</p>
+        </div>
+
+        <div class="flex flex-col items-start gap-3">
+          <div class="p-3 bg-brand/10 text-brand rounded-lg">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+          </div>
+          <h4 class="font-bold">Research</h4>
+          <p class="text-xs text-muted">Applied research with local partners and universities.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-gray-50 border-t border-b border-gray-100 py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex items-center justify-between">
+      <h2 class="text-4xl font-black uppercase tracking-tighter">Projects & Initiatives</h2>
+      <a href="projects2.html" class="text-brand font-semibold hover:underline">View all projects →</a>
+    </div>
+
+    <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg transition">
+        <img src="assets/images/cocoabot.png" class="w-full h-48 object-cover bg-gray-200" alt="CocoaBot" />
+        <div class="p-6">
+          <span class="text-brand text-xs font-bold uppercase tracking-wider">Autonomous Agricultural Robot</span>
+          <h3 class="text-xl font-bold mt-2">CocoaBot</h3>
+          <p class="mt-3 text-sm text-muted leading-relaxed">
+            CocoaBot is our flagship project — a mobile robot that performs pruning, pest detection, and data collection using locally-sourced components.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg transition">
+        <img src="assets/images/car.png" class="w-full h-48 object-cover bg-gray-200" alt="Workshop" />
+        <div class="p-6">
+          <span class="text-brand text-xs font-bold uppercase tracking-wider">Maker spaces across Ogun State</span>
+          <h3 class="text-xl font-bold mt-2">Local Workshop Network</h3>
+          <p class="mt-3 text-sm text-muted leading-relaxed">
+            Establishing community workshops for prototyping and skills training—equipping young engineers with tools to build indigenous technologies.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg transition">
+        <img src="assets/images/outreach.jpg" class="w-full h-48 object-cover bg-gray-200" alt="EdTech" />
+        <div class="p-6">
+          <span class="text-brand text-xs font-bold uppercase tracking-wider">STEM for Secondary Schools</span>
+          <h3 class="text-xl font-bold mt-2">EdTech Curriculum</h3>
+          <p class="mt-3 text-sm text-muted leading-relaxed">
+            Developing practical STEM curricula and teacher training to increase technical literacy and pipeline local talent into manufacturing.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="max-w-7xl mx-auto px-6 py-24">
+  <h2 class="text-4xl font-black uppercase tracking-tighter">Research & Publications</h2>
+  <p class="mt-4 text-gray-700 max-w-2xl">Peer-reviewed work, technical reports, and open-source repositories. We prioritise reproducible research and open data.</p>
+
+  <div class="mt-12 grid md:grid-cols-3 gap-6">
+    <div class="p-6 border border-gray-200 rounded-xl hover:border-brand transition">
+      <span class="px-2 py-1 bg-brand/10 text-brand text-xs font-bold rounded">Computer Vision</span>
+      <h3 class="font-bold mt-4 text-lg">CocoaBot Perception</h3>
+      <p class="text-xs text-muted mt-1 italic">March 20, 2025</p>
+      <p class="mt-4 text-sm text-gray-600">Published study on CNN models for pest detection on cocoa farms and the dataset curation process.</p>
+    </div>
+
+    <div class="p-6 border border-gray-200 rounded-xl hover:border-brand transition">
+      <span class="px-2 py-1 bg-brand/10 text-brand text-xs font-bold rounded">Engineering</span>
+      <h3 class="font-bold mt-4 text-lg">Local Manufacturing</h3>
+      <p class="text-xs text-muted mt-1 italic">Nov 01, 2024</p>
+      <p class="mt-4 text-sm text-gray-600">A whitepaper exploring cost-effective fabrication techniques for robotics in Nigeria.</p>
+    </div>
+
+    <div class="p-6 border border-gray-200 rounded-xl hover:border-brand transition">
+      <span class="px-2 py-1 bg-brand/10 text-brand text-xs font-bold rounded">Energy</span>
+      <h3 class="font-bold mt-4 text-lg">Energy for Rural Devices</h3>
+      <p class="text-xs text-muted mt-1 italic">June 15, 2024</p>
+      <p class="mt-4 text-sm text-gray-600">Design patterns for solar-assisted charging systems for field robots in remote areas.</p>
+    </div>
+  </div>
+</section>
+
+<section class="bg-brand/5 py-16">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex items-center justify-between mb-8">
+      <h3 class="text-2xl font-bold uppercase tracking-tight">Upcoming Events</h3>
+      <a href="events2.html" class="text-brand font-semibold">See all events →</a>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-brand/10">
+        <div class="bg-brand text-white text-center p-2 rounded-lg min-w-[60px]">
+          <span class="block text-xs uppercase">Oct</span>
+          <span class="block text-xl font-bold">03</span>
+        </div>
+        <div>
+          <h4 class="font-bold text-sm">CocoaBot Field Demo</h4>
+          <p class="text-xs text-muted">Ogun State Plantation</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-brand/10">
+        <div class="bg-brand text-white text-center p-2 rounded-lg min-w-[60px]">
+          <span class="block text-xs uppercase">Nov</span>
+          <span class="block text-xl font-bold">12</span>
+        </div>
+        <div>
+          <h4 class="font-bold text-sm">Maker Workshop Series</h4>
+          <p class="text-xs text-muted">Ogun State Tech Hub</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-brand/10">
+        <div class="bg-brand text-white text-center p-2 rounded-lg min-w-[60px]">
+          <span class="block text-xs uppercase">Dec</span>
+          <span class="block text-xl font-bold">01</span>
+        </div>
+        <div>
+          <h4 class="font-bold text-sm">STEM Outreach</h4>
+          <p class="text-xs text-muted">Kwara & Ogun</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="max-w-7xl mx-auto px-6 py-24">
+  <div class="grid md:grid-cols-2 gap-16 items-center">
+    <div>
+      <h2 class="text-4xl font-black uppercase tracking-tighter">Get Involved</h2>
+      <p class="mt-4 text-gray-700 text-lg">Partner with us, volunteer, sponsor a project, or donate to support local technology development across Nigeria.</p>
+
+      <div class="mt-8 flex gap-4">
+        <a href="#" class="px-8 py-3 bg-brand text-white rounded-xl font-bold shadow-lg hover:bg-brandDark transition">Donate Now</a>
+        <a href="#" class="px-8 py-3 border-2 border-gray-200 rounded-xl font-bold hover:border-brand transition">Sponsor a Project</a>
+      </div>
+    </div>
+
+    <div class="rounded-2xl border border-gray-100 p-8 bg-white shadow-2xl">
+      <h4 class="font-bold text-xl">Volunteer / Collaborate</h4>
+      <p class="mt-2 text-gray-600 mb-6">Join our network of engineers and researchers.</p>
+
+      <form class="grid grid-cols-1 gap-4">
+        <input class="border border-gray-200 rounded-lg p-3 focus:ring-2 focus:ring-brand outline-none" placeholder="Full name" />
+        <input class="border border-gray-200 rounded-lg p-3 focus:ring-2 focus:ring-brand outline-none" placeholder="Email address" />
+        <select class="border border-gray-200 rounded-lg p-3 focus:ring-2 focus:ring-brand outline-none bg-white">
+          <option>Volunteer</option>
+          <option>Industry Partner</option>
+          <option>Research Collaboration</option>
+        </select>
+        <textarea class="border border-gray-200 rounded-lg p-3 focus:ring-2 focus:ring-brand outline-none" rows="4" placeholder="How'd you like to contribute?"></textarea>
+        <button class="px-4 py-3 bg-brand text-white font-bold rounded-lg hover:bg-brandDark transition">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-dark text-gray-300 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6 py-20">
+    <div class="grid md:grid-cols-4 lg:grid-cols-5 gap-12 lg:gap-16">
+      
+      <div class="md:col-span-4 lg:col-span-2">
+        <h3 class="text-white font-black text-2xl uppercase tracking-tighter">
+          Emperor <span class="text-brand">MEC.</span>
+        </h3>
+        <p class="mt-6 text-[10px] leading-relaxed uppercase tracking-[0.2em] font-bold text-gray-500 max-w-sm">
+          An independent STEM research foundation advancing indigenous innovation and industrial-scale engineering through cross-disciplinary laboratory excellence.
+        </p>
+        <div class="mt-8 flex gap-6">
+          <a href="#" class="text-gray-500 hover:text-brand transition text-[10px] font-mono font-bold uppercase tracking-widest">Facebook</a>
+          <a href="#" class="text-gray-500 hover:text-brand transition text-[10px] font-mono font-bold uppercase tracking-widest">X (Twitter)</a>
+          <a href="#" class="text-gray-500 hover:text-brand transition text-[10px] font-mono font-bold uppercase tracking-widest">Instagram</a>
+        </div>
+      </div>
+      
+      <div>
+        <h4 class="text-white text-[10px] font-mono font-bold uppercase tracking-[0.3em] mb-8 text-brand">Institutional //</h4>
+        <ul class="space-y-4 text-[10px] font-bold uppercase tracking-[0.15em]">
+          <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+          <li><a href="governance.html" class="hover:text-white transition">Governance</a></li>
+          <li><a href="partnerships.html" class="hover:text-white transition">Partnerships</a></li>
+          <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h4 class="text-white text-[10px] font-mono font-bold uppercase tracking-[0.3em] mb-8 text-brand">Laboratory //</h4>
+        <ul class="space-y-4 text-[10px] font-bold uppercase tracking-[0.15em]">
+          <li><a href="research.html" class="hover:text-white transition">Research</a></li>
+          <li><a href="facilities.html" class="hover:text-white transition">Facilities</a></li>
+          <li><a href="fellowships.html" class="hover:text-white transition">Fellowships</a></li>
+          <li><a href="impact.html" class="hover:text-white transition">Impact</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h4 class="text-white text-[10px] font-mono font-bold uppercase tracking-[0.3em] mb-8 text-brand">Archives //</h4>
+        <ul class="space-y-4 text-[10px] font-bold uppercase tracking-[0.15em]">
+          <li><a href="dispatches.html" class="hover:text-white transition">Dispatches</a></li>
+          <li><a href="report.html" class="hover:text-white transition">Annual Report</a></li>
+          <li><a href="#" class="hover:text-white transition">Compliance</a></li>
+          <li><a href="#" class="hover:text-white transition">Ethics</a></li>
+        </ul>
+      </div>
+      
+    </div>
+    
+    <div class="mt-20 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
+      <div class="flex items-center gap-6">
+        <div class="px-4 py-2 border border-white/10 rounded flex items-center gap-3">
+          <div class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse shadow-[0_0_8px_rgba(34,197,94,0.6)]"></div>
+          <span class="text-[9px] font-mono font-bold text-gray-500 uppercase tracking-widest">Systems: Operational</span>
+        </div>
+        <div class="hidden md:block h-4 w-[1px] bg-white/10"></div>
+        <span class="text-[9px] font-mono text-gray-600 uppercase tracking-widest">Ref: OG-HUB-S26</span>
+      </div>
+      
+      <div class="text-[10px] font-mono font-bold uppercase tracking-[0.3em] text-gray-600">
+        © 2026 Emperor MEC. Foundation <span class="hidden md:inline mx-4">//</span> <span class="text-gray-700">All Intellectual Property Reserved</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+</body>
+</html>

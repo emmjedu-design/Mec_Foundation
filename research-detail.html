@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Dossier: CocoaBot | Emperor MEC Foundation</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#BF9000',
+            brandDark: '#8A6800',
+            dark: '#121212',
+            muted: '#6B7280'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .bg-grid {
+      background-size: 30px 30px;
+      background-image: radial-gradient(circle, #e5e7eb 1px, transparent 1px);
+    }
+    .hero-gradient {
+      background: linear-gradient(135deg, #BF9000 0%, #8A6800 100%);
+    }
+    .blueprint-corner {
+      position: relative;
+    }
+    .blueprint-corner::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; width: 20px; height: 20px;
+      border-top: 2px solid #BF9000; border-left: 2px solid #BF9000;
+    }
+    .spec-label {
+      @apply text-[10px] font-mono font-bold text-brand uppercase tracking-widest block mb-1;
+    }
+    .spec-value {
+      @apply text-sm font-bold text-dark border-b border-gray-100 pb-2 mb-4 block;
+    }
+  </style>
+</head>
+<body class="bg-white text-dark antialiased">
+
+<header class="sticky top-0 z-50 backdrop-blur-md bg-white/80 border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center space-x-3">
+      <img src="assets/images/logo.png" alt="Logo" class="h-10 w-auto" />
+      <span class="font-bold text-xl tracking-tight uppercase">MEC <span class="text-brand">Archive</span></span>
+    </div>
+    <nav class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest">
+      <a href="index.html" class="hover:text-brand transition">Home</a>
+      <a href="research-detail.html" class="hover:text-brand transition">Back to Initiatives</a>
+      <a href="#" class="px-4 py-2 bg-dark text-white rounded hover:bg-brand transition uppercase">Download Full Paper</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero-gradient text-white relative overflow-hidden">
+  <div class="absolute inset-0 opacity-10 bg-grid"></div>
+  <div class="max-w-7xl mx-auto px-6 py-28 relative z-10">
+    <div class="flex flex-wrap items-center gap-4 mb-8">
+        <span class="px-3 py-1 bg-white/20 border border-white/30 rounded-full text-[10px] font-bold tracking-widest uppercase">Project ID: R-2026-CB01</span>
+        <span class="px-3 py-1 bg-green-500/80 border border-white/30 rounded-full text-[10px] font-bold tracking-widest uppercase italic">Status: Field Testing</span>
+    </div>
+    <h1 class="text-6xl md:text-8xl font-black tracking-tighter leading-none uppercase mb-6">CocoaBot<span class="text-dark/20 font-light">.v2</span></h1>
+    <p class="max-w-3xl text-xl text-white/90 leading-relaxed font-light italic">
+      Autonomous precision agricultural system optimized for high-density cocoa plantation management and pest identification.
+    </p>
+  </div>
+</section>
+
+<section class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-3 gap-16">
+      
+      <div class="lg:col-span-2 space-y-16">
+        
+        <div>
+          <h2 class="text-3xl font-black uppercase tracking-tighter mb-8 border-b-2 border-brand inline-block">01. Mission Objective</h2>
+          <p class="text-muted text-lg leading-relaxed mb-6">
+            Cocoa farming in West Africa remains labor-intensive and susceptible to Black Pod Disease, which can decimate up to 40% of annual yields. The <strong>CocoaBot</strong> initiative was launched to engineer an autonomous solution capable of navigating rugged plantation terrain to perform three critical tasks: autonomous weeding, multispectral health monitoring, and precision fertilization.
+          </p>
+          <blockquote class="p-6 bg-gray-50 border-l-4 border-brand italic text-muted">
+            "By integrating computer vision with indigenous mechanical engineering, we aim to increase net farm yield by 25% while reducing hazardous chemical exposure for farmers."
+          </blockquote>
+        </div>
+
+        <div class="blueprint-corner p-1 border border-gray-100 bg-gray-50 overflow-hidden">
+          
+          <p class="text-[10px] font-mono text-center py-4 uppercase tracking-widest font-bold text-gray-400">Fig 1.1: CocoaBot Propulsion & Navigation Schematic</p>
+        </div>
+
+        <div>
+          <h2 class="text-3xl font-black uppercase tracking-tighter mb-8 border-b-2 border-brand inline-block">02. Methodology</h2>
+          <div class="space-y-6">
+            <h4 class="font-bold text-xl uppercase tracking-tight italic">Terrain Navigation (SLAM)</h4>
+            <p class="text-muted leading-relaxed">
+              Our researchers developed a custom Simultaneous Localization and Mapping (SLAM) algorithm tuned for the irregular light patterns and dense undergrowth of cocoa groves. Unlike standard GPS-dependent systems, CocoaBot utilizes LiDAR-fused odometry to maintain centimeter-level accuracy under heavy canopy cover.
+            </p>
+            
+            <h4 class="font-bold text-xl uppercase tracking-tight italic">Deep Learning for Pod Analysis</h4>
+            <p class="text-muted leading-relaxed">
+              The on-board compute module runs a proprietary Convolutional Neural Network (MEC-Vision) trained on over 50,000 images of cocoa pods at various stages of maturation and disease.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-dark text-white p-12 rounded-3xl relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10 bg-grid"></div>
+            <h3 class="text-2xl font-black uppercase tracking-tighter mb-10 text-brand">Field Performance Metrics</h3>
+            <div class="grid sm:grid-cols-3 gap-12 text-center">
+                <div>
+                    <span class="block text-4xl font-black mb-2">92.4%</span>
+                    <span class="text-[10px] font-mono text-gray-400 uppercase tracking-widest">Disease ID Accuracy</span>
+                </div>
+                <div>
+                    <span class="block text-4xl font-black mb-2">0.5m/s</span>
+                    <span class="text-[10px] font-mono text-gray-400 uppercase tracking-widest">Avg. Cruise Velocity</span>
+                </div>
+                <div>
+                    <span class="block text-4xl font-black mb-2">8hrs</span>
+                    <span class="text-[10px] font-mono text-gray-400 uppercase tracking-widest">Battery Endurance</span>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-1">
+        <div class="sticky top-28 space-y-8">
+            <div class="p-8 bg-gray-50 border border-gray-100 rounded-2xl blueprint-corner">
+                <h3 class="font-black text-xl uppercase tracking-tighter mb-8 flex justify-between items-center">
+                    Technical Specs
+                    <svg class="w-5 h-5 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                </h3>
+                
+                <span class="spec-label">Propulsion //</span>
+                <span class="spec-value">All-Terrain 4WD Electric Hub</span>
+
+                <span class="spec-label">Primary Sensors //</span>
+                <span class="spec-value">360° LiDAR, Multispectral Camera</span>
+
+                <span class="spec-label">Computation //</span>
+                <span class="spec-value">NVIDIA Jetson Edge Processor</span>
+
+                <span class="spec-label">AI Framework //</span>
+                <span class="spec-value">TensorFlow Lite / ROS 2</span>
+
+                <span class="spec-label">Payload Capacity //</span>
+                <span class="spec-value">25kg (Liquid/Granular)</span>
+            </div>
+
+            <div class="p-8 bg-brand text-white rounded-2xl shadow-xl">
+                <h4 class="text-[10px] font-mono font-bold uppercase tracking-widest mb-6 border-b border-white/20 pb-2">Readiness Index (TRL)</h4>
+                <div class="space-y-3">
+                    <div class="flex justify-between text-xs font-bold uppercase">
+                        <span>Current Stage</span>
+                        <span>TRL 7</span>
+                    </div>
+                    <div class="w-full bg-black/20 h-2 rounded-full overflow-hidden">
+                        <div class="bg-white h-full" style="width: 77%"></div>
+                    </div>
+                    <p class="text-[10px] italic leading-tight pt-2">
+                        System prototype demonstration in an operational environment (Field validated).
+                    </p>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="text-xs font-bold uppercase tracking-widest text-muted">Project Assets</h4>
+                <a href="#" class="flex items-center justify-between p-4 border border-gray-100 rounded-xl hover:bg-gray-50 transition">
+                    <span class="text-sm font-bold">Research Paper (PDF)</span>
+                    <svg class="w-4 h-4 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                </a>
+                <a href="#" class="flex items-center justify-between p-4 border border-gray-100 rounded-xl hover:bg-gray-50 transition">
+                    <span class="text-sm font-bold">CAD Schematic Data</span>
+                    <svg class="w-4 h-4 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                </a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-24 bg-gray-50 border-t border-gray-200">
+    <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-2xl font-black uppercase tracking-tighter mb-12">Related R&D Initiatives</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white border border-gray-100 rounded-2xl p-6 hover:shadow-lg transition">
+                <span class="text-[9px] font-mono font-bold text-brand uppercase">R-2026-EN02</span>
+                <h4 class="text-lg font-bold uppercase mt-2">Solar-Drying optimization</h4>
+                <p class="text-xs text-muted mt-2 mb-6">Thermal storage solutions for post-harvest cocoa processing.</p>
+                <a href="#" class="text-[10px] font-black uppercase tracking-widest text-dark hover:text-brand transition">View Dossier &rarr;</a>
+            </div>
+            </div>
+    </div>
+</section>
+
+<footer class="bg-dark text-gray-300 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6 py-20">
+    <div class="grid md:grid-cols-4 lg:grid-cols-5 gap-12 lg:gap-16">
+      
+      <div class="md:col-span-4 lg:col-span-2">
+        <h3 class="text-white font-black text-2xl uppercase tracking-tighter">
+          Emperor <span class="text-brand">MEC.</span>
+        </h3>
+        <p class="mt-6 text-[10px] leading-relaxed uppercase tracking-[0.2em] font-bold text-gray-500 max-w-sm">
+          An independent STEM research foundation advancing indigenous innovation and industrial-scale engineering through cross-disciplinary laboratory excellence.
+        </p>
+        <div class="mt-8 flex gap-6">
+          <a href="#" class="text-gray-500 hover:text-brand transition text-[10px] font-mono font-bold uppercase tracking-widest">Facebook</a>
+          <a href="#" class="text-gray-500 hover:text-brand transition text-[10px] font-mono font-bold uppercase tracking-widest">X (Twitter)</a>
+          <a href="#" class="text-gray-500 hover:text-brand transition text-[10px] font-mono font-bold uppercase tracking-widest">Instagram</a>
+        </div>
+      </div>
+      
+      <div>
+        <h4 class="text-white text-[10px] font-mono font-bold uppercase tracking-[0.3em] mb-8 text-brand">Institutional //</h4>
+        <ul class="space-y-4 text-[10px] font-bold uppercase tracking-[0.15em]">
+          <li><a href="about-us2.html" class="hover:text-white transition">About Us</a></li>
+          <li><a href="governance2.html" class="hover:text-white transition">Governance</a></li>
+          <li><a href="partnership2.html" class="hover:text-white transition">Partnerships</a></li>
+          <li><a href="contact2.html" class="hover:text-white transition">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h4 class="text-white text-[10px] font-mono font-bold uppercase tracking-[0.3em] mb-8 text-brand">Laboratory //</h4>
+        <ul class="space-y-4 text-[10px] font-bold uppercase tracking-[0.15em]">
+          <li><a href="research-detail.html" class="hover:text-white transition">Research</a></li>
+          <li><a href="lab.html" class="hover:text-white transition">Facilities</a></li>
+          <li><a href="fellowship.html" class="hover:text-white transition">Fellowships</a></li>
+          <li><a href="impact2.html" class="hover:text-white transition">Impact</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h4 class="text-white text-[10px] font-mono font-bold uppercase tracking-[0.3em] mb-8 text-brand">Archives //</h4>
+        <ul class="space-y-4 text-[10px] font-bold uppercase tracking-[0.15em]">
+          <li><a href="dispatches.html" class="hover:text-white transition">Dispatches</a></li>
+          <li><a href="annual-report.html" class="hover:text-white transition">Annual Report</a></li>
+          <li><a href="#" class="hover:text-white transition">Compliance</a></li>
+          <li><a href="#" class="hover:text-white transition">Ethics</a></li>
+        </ul>
+      </div>
+      
+    </div>
+    
+    <div class="mt-20 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
+      <div class="flex items-center gap-6">
+        <div class="px-4 py-2 border border-white/10 rounded flex items-center gap-3">
+          <div class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse shadow-[0_0_8px_rgba(34,197,94,0.6)]"></div>
+          <span class="text-[9px] font-mono font-bold text-gray-500 uppercase tracking-widest">Systems: Operational</span>
+        </div>
+        <div class="hidden md:block h-4 w-[1px] bg-white/10"></div>
+        <span class="text-[9px] font-mono text-gray-600 uppercase tracking-widest">Ref: OG-HUB-S26</span>
+      </div>
+      
+      <div class="text-[10px] font-mono font-bold uppercase tracking-[0.3em] text-gray-600">
+        © 2026 Emperor MEC. Foundation <span class="hidden md:inline mx-4">//</span> <span class="text-gray-700">All Intellectual Property Reserved</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

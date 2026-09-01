@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lab Infrastructure | Emperor MEC Foundation</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#BF9000',
+            brandDark: '#8A6800',
+            dark: '#121212',
+            muted: '#6B7280'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .bg-grid {
+      background-size: 30px 30px;
+      background-image: radial-gradient(circle, #e5e7eb 1px, transparent 1px);
+    }
+    .hero-gradient {
+      background: linear-gradient(135deg, #BF9000 0%, #8A6800 100%);
+    }
+    .blueprint-corner {
+      position: relative;
+    }
+    .blueprint-corner::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; width: 20px; height: 20px;
+      border-top: 2px solid #BF9000; border-left: 2px solid #BF9000;
+    }
+    .manifest-row {
+      @apply border-b border-gray-100 py-4 flex flex-col md:flex-row md:items-center justify-between gap-2 hover:bg-gray-50 px-4 transition-all;
+    }
+    .status-pill {
+      @apply text-[9px] font-mono font-bold uppercase px-2 py-0.5 rounded-full border;
+    }
+  </style>
+</head>
+<body class="bg-white text-dark antialiased">
+
+<header class="sticky top-0 z-50 backdrop-blur-md bg-white/80 border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center space-x-3">
+      <img src="assets/images/logo.png" alt="Logo" class="h-10 w-auto" />
+      <span class="font-bold text-xl tracking-tight uppercase">MEC <span class="text-brand">Facilities</span></span>
+    </div>
+    <nav class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest">
+      <a href="index.html" class="hover:text-brand transition">Home</a>
+      <a href="research-detail.html" class="hover:text-brand transition">Research</a>
+      <a href="about-us2.html" class="hover:text-brand transition">About</a>
+      <a href="#" class="text-brand">Infrastructure</a>
+      <a href="contact2.html" class="hover:text-brand transition">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero-gradient text-white relative overflow-hidden">
+  <div class="absolute inset-0 opacity-10 bg-grid"></div>
+  <div class="max-w-7xl mx-auto px-6 py-28 relative z-10">
+    <div class="inline-block px-3 py-1 border border-white/30 rounded-full text-xs font-bold tracking-widest uppercase mb-6 bg-white/10">
+        Facility Registry: OG-HUB-01
+    </div>
+    <h1 class="text-5xl md:text-7xl font-black tracking-tighter leading-none uppercase">
+      The MEC <br><span class="text-dark/30">Sandbox.</span>
+    </h1>
+    <p class="mt-8 max-w-2xl text-lg text-white/90 leading-relaxed border-l-4 border-white/50 pl-6">
+      Our facilities in Ogun State are engineered to support the full innovation lifecycle—from fundamental physics research to industrial-scale prototype fabrication.
+    </p>
+  </div>
+</section>
+
+<section class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="mb-16">
+        <h2 class="text-3xl font-black uppercase tracking-tighter">Zonal Architecture</h2>
+        <p class="text-muted mt-2">Specialized environments optimized for multidisciplinary engineering.</p>
+    </div>
+
+    
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+      <div class="p-8 border border-gray-100 rounded-2xl blueprint-corner bg-gray-50">
+        <h4 class="text-xs font-mono font-bold text-brand uppercase mb-4 tracking-widest">Zone A //</h4>
+        <h3 class="text-xl font-bold uppercase mb-4">Fabrication Bay</h3>
+        <p class="text-sm text-muted leading-relaxed">
+            Equipped for subtractive and additive manufacturing, with a focus on rapidly iterating mechanical components for robotics.
+        </p>
+      </div>
+
+      <div class="p-8 border border-gray-100 rounded-2xl blueprint-corner bg-gray-50">
+        <h4 class="text-xs font-mono font-bold text-brand uppercase mb-4 tracking-widest">Zone B //</h4>
+        <h3 class="text-xl font-bold uppercase mb-4">Neural Compute Suite</h3>
+        <p class="text-sm text-muted leading-relaxed">
+            High-performance GPU clusters dedicated to training the MEC-Vision models and processing field-data telemetry.
+        </p>
+      </div>
+
+      <div class="p-8 border border-gray-100 rounded-2xl blueprint-corner bg-gray-50">
+        <h4 class="text-xs font-mono font-bold text-brand uppercase mb-4 tracking-widest">Zone C //</h4>
+        <h3 class="text-xl font-bold uppercase mb-4">Energy Systems Lab</h3>
+        <p class="text-sm text-muted leading-relaxed">
+            Precision testing for battery chemistry and indigenous thermal storage solutions optimized for tropical climates.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-24 bg-gray-50 bg-grid border-y border-gray-100">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div>
+            <h2 class="text-4xl font-black uppercase tracking-tighter">Equipment Manifest</h2>
+            <p class="text-muted mt-2">Live inventory of institutional technical assets.</p>
+        </div>
+        <div class="flex gap-4">
+            <div class="px-4 py-2 bg-white border border-gray-200 rounded text-[10px] font-bold uppercase tracking-widest">Total Assets: 42</div>
+            <div class="px-4 py-2 bg-brand text-white rounded text-[10px] font-bold uppercase tracking-widest">Status: 100% Operational</div>
+        </div>
+    </div>
+
+    
+
+    <div class="bg-white rounded-3xl border border-gray-200 overflow-hidden shadow-sm">
+      <div class="hidden md:flex bg-dark text-white text-[10px] font-mono font-bold uppercase tracking-widest px-8 py-4">
+        <div class="w-1/4">Asset Identifier</div>
+        <div class="w-2/4">Technical Description</div>
+        <div class="w-1/4 text-right">Department</div>
+      </div>
+
+      <div class="divide-y divide-gray-100">
+        <div class="manifest-row">
+            <div class="md:w-1/4">
+                <span class="status-pill border-green-200 text-green-600 bg-green-50 mr-2">Online</span>
+                <span class="text-xs font-mono font-bold">MEC-CNC-01</span>
+            </div>
+            <div class="md:w-2/4 text-sm font-medium">5-Axis High-Precision Vertical Milling Center</div>
+            <div class="md:w-1/4 text-right text-[10px] font-mono text-brand font-bold">Fabrication</div>
+        </div>
+
+        <div class="manifest-row">
+            <div class="md:w-1/4">
+                <span class="status-pill border-green-200 text-green-600 bg-green-50 mr-2">Online</span>
+                <span class="text-xs font-mono font-bold">MEC-AI-NODE-04</span>
+            </div>
+            <div class="md:w-2/4 text-sm font-medium">NVIDIA DGX-Station Integrated Neural Training Node</div>
+            <div class="md:w-1/4 text-right text-[10px] font-mono text-brand font-bold">Computing</div>
+        </div>
+
+        <div class="manifest-row">
+            <div class="md:w-1/4">
+                <span class="status-pill border-yellow-200 text-yellow-600 bg-yellow-50 mr-2">Maint</span>
+                <span class="text-xs font-mono font-bold">MEC-PRNT-3D</span>
+            </div>
+            <div class="md:w-2/4 text-sm font-medium">Industrial SLA Resin Printer (Large Format)</div>
+            <div class="md:w-1/4 text-right text-[10px] font-mono text-brand font-bold">Prototyping</div>
+        </div>
+
+        <div class="manifest-row">
+            <div class="md:w-1/4">
+                <span class="status-pill border-green-200 text-green-600 bg-green-50 mr-2">Online</span>
+                <span class="text-xs font-mono font-bold">MEC-SPEC-X1</span>
+            </div>
+            <div class="md:w-2/4 text-sm font-medium">Fiber-Optic Multispectral Analyzer for Soil Diagnostics</div>
+            <div class="md:w-1/4 text-right text-[10px] font-mono text-brand font-bold">Field-Res</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-24 bg-dark text-white relative">
+    <div class="absolute inset-0 opacity-5 bg-grid"></div>
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
+        <div>
+            <h2 class="text-4xl font-black uppercase tracking-tighter text-brand mb-8">Infrastructure Resilience</h2>
+            <div class="space-y-8">
+                <div class="flex gap-6">
+                    <div class="text-brand font-mono text-xl font-black">01</div>
+                    <div>
+                        <h4 class="font-bold uppercase text-sm tracking-tight mb-2">Power Redundancy</h4>
+                        <p class="text-gray-400 text-xs leading-relaxed">Off-grid hybrid solar-diesel microgrid ensuring 99.9% uptime for long-cycle simulations and data processing.</p>
+                    </div>
+                </div>
+                <div class="flex gap-6">
+                    <div class="text-brand font-mono text-xl font-black">02</div>
+                    <div>
+                        <h4 class="font-bold uppercase text-sm tracking-tight mb-2">Safety Protocols</h4>
+                        <p class="text-gray-400 text-xs leading-relaxed">Integrated ISO-45001 occupational health and safety systems with chemical-specific containment zones.</p>
+                    </div>
+                </div>
+                <div class="flex gap-6">
+                    <div class="text-brand font-mono text-xl font-black">03</div>
+                    <div>
+                        <h4 class="font-bold uppercase text-sm tracking-tight mb-2">Network Architecture</h4>
+                        <p class="text-gray-400 text-xs leading-relaxed">Fiber-optic backbone with edge-computing localized nodes for high-bandwidth robotic telemetry.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="p-8 border border-white/10 bg-white/5 rounded-3xl blueprint-corner font-mono text-[10px] uppercase tracking-[0.2em] space-y-4">
+            <h4 class="text-brand font-bold">Facility Meta-Data //</h4>
+            <div class="flex justify-between border-b border-white/5 pb-2">
+                <span class="text-gray-500">Total Floor Area</span>
+                <span>12,500 SQ. FT.</span>
+            </div>
+            <div class="flex justify-between border-b border-white/5 pb-2">
+                <span class="text-gray-500">Climate Control</span>
+                <span>ACTIVE HEPA / HUMIDITY</span>
+            </div>
+            <div class="flex justify-between border-b border-white/5 pb-2">
+                <span class="text-gray-500">Security Grade</span>
+                <span>BIOMETRIC TIER-03</span>
+            </div>
+            <div class="flex justify-between">
+                <span class="text-gray-500">Max Load (Power)</span>
+                <span>150 KVA SUSTAINED</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-white border-t border-gray-200 py-16">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+    <div class="flex items-center gap-4">
+        <span class="font-black text-xl uppercase tracking-tighter">MEC <span class="text-brand">Labs</span></span>
+        <div class="h-6 w-[1px] bg-gray-200"></div>
+        <span class="text-[9px] font-bold text-gray-400 uppercase tracking-widest">Audited Jan 2026</span>
+    </div>
+    <div class="text-[10px] font-mono text-gray-500 uppercase tracking-widest">
+        Emperor MEC Foundation // Facilities Division
+    </div>
+  </div>
+</section>
+
+<footer class="bg-dark text-gray-300 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6 py-20">
+    <div class="grid md:grid-cols-4 lg:grid-cols-5 gap-12 lg:gap-16">
+      
+      <div class="md:col-span-4 lg:col-span-2">
+        <h3 class="text-white font-black text-2xl uppercase tracking-tighter">
+          Emperor <span class="text-brand">MEC.</span>
+        </h3>
+        <p class="mt-6 text-[10px] leading-relaxed uppercase tracking-[0.2em] font-bold text-gray-500 max-w-sm">
+          An independent STEM research foundation advancing indigenous innovation and industrial-scale engineering through cross-disciplinary laboratory excellence.
+        </p>
+        <div class="mt-8 flex gap-6">
+          <a href="#" class="text-gray-500 hover:text-brand transition text-[10px] font-mono font-bold uppercase tracking-widest">Facebook</a>
+          <a href="#" class="text-gray-500 hover:text-brand transition text-[10px] font-mono font-bold uppercase tracking-widest">X (Twitter)</a>
+          <a href="#" class="text-gray-500 hover:text-brand transition text-[10px] font-mono font-bold uppercase tracking-widest">Instagram</a>
+        </div>
+      </div>
+      
+      <div>
+        <h4 class="text-white text-[10px] font-mono font-bold uppercase tracking-[0.3em] mb-8 text-brand">Institutional //</h4>
+        <ul class="space-y-4 text-[10px] font-bold uppercase tracking-[0.15em]">
+          <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+          <li><a href="governance.html" class="hover:text-white transition">Governance</a></li>
+          <li><a href="partnerships.html" class="hover:text-white transition">Partnerships</a></li>
+          <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h4 class="text-white text-[10px] font-mono font-bold uppercase tracking-[0.3em] mb-8 text-brand">Laboratory //</h4>
+        <ul class="space-y-4 text-[10px] font-bold uppercase tracking-[0.15em]">
+          <li><a href="research.html" class="hover:text-white transition">Research</a></li>
+          <li><a href="facilities.html" class="hover:text-white transition">Facilities</a></li>
+          <li><a href="fellowships.html" class="hover:text-white transition">Fellowships</a></li>
+          <li><a href="impact.html" class="hover:text-white transition">Impact</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h4 class="text-white text-[10px] font-mono font-bold uppercase tracking-[0.3em] mb-8 text-brand">Archives //</h4>
+        <ul class="space-y-4 text-[10px] font-bold uppercase tracking-[0.15em]">
+          <li><a href="dispatches.html" class="hover:text-white transition">Dispatches</a></li>
+          <li><a href="report.html" class="hover:text-white transition">Annual Report</a></li>
+          <li><a href="#" class="hover:text-white transition">Compliance</a></li>
+          <li><a href="#" class="hover:text-white transition">Ethics</a></li>
+        </ul>
+      </div>
+      
+    </div>
+    
+    <div class="mt-20 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
+      <div class="flex items-center gap-6">
+        <div class="px-4 py-2 border border-white/10 rounded flex items-center gap-3">
+          <div class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse shadow-[0_0_8px_rgba(34,197,94,0.6)]"></div>
+          <span class="text-[9px] font-mono font-bold text-gray-500 uppercase tracking-widest">Systems: Operational</span>
+        </div>
+        <div class="hidden md:block h-4 w-[1px] bg-white/10"></div>
+        <span class="text-[9px] font-mono text-gray-600 uppercase tracking-widest">Ref: OG-HUB-S26</span>
+      </div>
+      
+      <div class="text-[10px] font-mono font-bold uppercase tracking-[0.3em] text-gray-600">
+        © 2026 Emperor MEC. Foundation <span class="hidden md:inline mx-4">//</span> <span class="text-gray-700">All Intellectual Property Reserved</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

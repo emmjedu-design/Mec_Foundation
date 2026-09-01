@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Press & Dispatches | Emperor MEC Foundation</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#BF9000',
+            brandDark: '#8A6800',
+            dark: '#121212',
+            muted: '#6B7280'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .bg-grid {
+      background-size: 30px 30px;
+      background-image: radial-gradient(circle, #e5e7eb 1px, transparent 1px);
+    }
+    .hero-gradient {
+      background: linear-gradient(135deg, #BF9000 0%, #8A6800 100%);
+    }
+    .blueprint-corner {
+      position: relative;
+    }
+    .blueprint-corner::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; width: 20px; height: 20px;
+      border-top: 2px solid #BF9000; border-left: 2px solid #BF9000;
+    }
+    .news-card:hover .news-title {
+        color: #BF9000;
+    }
+  </style>
+</head>
+<body class="bg-white text-dark antialiased">
+
+<header class="sticky top-0 z-50 backdrop-blur-md bg-white/80 border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center space-x-3">
+      <img src="assets/images/logo.png" alt="Logo" class="h-10 w-auto" />
+      <span class="font-bold text-xl tracking-tight uppercase">MEC <span class="text-brand">Media</span></span>
+    </div>
+    <nav class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest">
+      <a href="index.html" class="hover:text-brand transition">Home</a>
+      <a href="research-detail.html" class="hover:text-brand transition">Research</a>
+      <a href="publications.html" class="hover:text-brand transition">Library</a>
+      <a href="#" class="text-brand">Press</a>
+      <a href="contact2.html" class="hover:text-brand transition">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero-gradient text-white relative overflow-hidden">
+  <div class="absolute inset-0 opacity-10 bg-grid"></div>
+  <div class="max-w-7xl mx-auto px-6 py-28 relative z-10">
+    <div class="inline-block px-3 py-1 border border-white/30 rounded-full text-xs font-bold tracking-widest uppercase mb-6 bg-white/10">
+        Public Relations & Communications
+    </div>
+    <h1 class="text-5xl md:text-7xl font-black tracking-tighter leading-none uppercase">
+      Official <br><span class="text-dark/30">Dispatches.</span>
+    </h1>
+    <p class="mt-8 max-w-2xl text-lg text-white/90 leading-relaxed border-l-4 border-white/50 pl-6">
+      The latest announcements, project milestones, and institutional updates from the Emperor MEC. Foundation laboratory.
+    </p>
+  </div>
+</section>
+
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="p-1 border border-gray-100 bg-gray-50 rounded-[2.5rem] overflow-hidden blueprint-corner group cursor-pointer shadow-sm">
+        <div class="grid lg:grid-cols-2 gap-0">
+            <div class="h-80 lg:h-full bg-gray-200 overflow-hidden">
+                
+            </div>
+            <div class="p-12 flex flex-col justify-center">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="text-[10px] font-mono font-bold text-brand uppercase tracking-widest px-2 py-1 bg-brand/10 rounded">Major Announcement</span>
+                    <span class="text-[10px] font-mono text-gray-400 uppercase">Jan 02, 2026</span>
+                </div>
+                <h2 class="text-3xl font-black uppercase tracking-tighter leading-tight mb-6 group-hover:text-brand transition-colors">
+                    Foundation Secures $5M Research Grant for Indigenous AI Development in West Africa
+                </h2>
+                <p class="text-muted text-sm leading-relaxed mb-8">
+                    The partnership will focus on accelerating the MEC-Vision framework, specifically designed to empower small-scale farmers through localized robotic intelligence...
+                </p>
+                <a href="dispatch-detail.html" class="text-xs font-bold uppercase tracking-[0.2em] flex items-center gap-2 group-hover:gap-4 transition-all">
+                    Read Dispatch <span class="text-brand">&rarr;</span>
+                </a>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-24 bg-gray-50 bg-grid border-y border-gray-100">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div>
+            <h2 class="text-4xl font-black uppercase tracking-tighter">Dispatch Log</h2>
+            <p class="text-muted mt-2">Historical record of all foundation communications.</p>
+        </div>
+        <div class="flex gap-2">
+            <button class="px-4 py-2 bg-white border border-gray-200 rounded text-[9px] font-bold uppercase tracking-widest hover:border-brand transition">Field Reports</button>
+            <button class="px-4 py-2 bg-white border border-gray-200 rounded text-[9px] font-bold uppercase tracking-widest hover:border-brand transition">Partnerships</button>
+            <button class="px-4 py-2 bg-white border border-gray-200 rounded text-[9px] font-bold uppercase tracking-widest hover:border-brand transition">Tech Briefs</button>
+        </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+      
+      <a href="dispatch-detail.html" class="news-card group block">
+        <div class="relative h-56 bg-gray-100 rounded-2xl overflow-hidden mb-6">
+            
+            <div class="absolute top-4 left-4">
+                <span class="px-2 py-1 bg-dark text-white text-[8px] font-mono font-bold rounded uppercase">Log #042</span>
+            </div>
+        </div>
+        <div class="space-y-3">
+            <span class="text-[10px] font-mono text-brand font-bold uppercase tracking-widest">Field Report // Agriculture</span>
+            <h3 class="news-title text-lg font-black uppercase tracking-tight leading-tight transition-colors">
+                CocoaBot v2 Completes 500-Hour Field Endurance Test in Ogun State
+            </h3>
+            <p class="text-xs text-muted leading-relaxed line-clamp-3">
+                Phase 3 testing concludes with 98.4% uptime, demonstrating resilience in high-humidity tropical conditions and rugged terrain navigation.
+            </p>
+            <div class="pt-4 flex justify-between items-center border-t border-gray-100">
+                <span class="text-[9px] font-bold text-gray-400 uppercase tracking-widest">Dec 15, 2025</span>
+                <span class="text-brand text-xs font-black">&rarr;</span>
+            </div>
+        </div>
+      </a>
+
+      <a href="dispatch-detail.html" class="news-card group block">
+        <div class="relative h-56 bg-gray-100 rounded-2xl overflow-hidden mb-6">
+            
+            <div class="absolute top-4 left-4">
+                <span class="px-2 py-1 bg-dark text-white text-[8px] font-mono font-bold rounded uppercase">Log #041</span>
+            </div>
+        </div>
+        <div class="space-y-3">
+            <span class="text-[10px] font-mono text-brand font-bold uppercase tracking-widest">Innovation // Energy</span>
+            <h3 class="news-title text-lg font-black uppercase tracking-tight leading-tight transition-colors">
+                Patent Filed for Indigenous Thermal Battery Storage System
+            </h3>
+            <p class="text-xs text-muted leading-relaxed line-clamp-3">
+                The Foundation announces the successful patent filing for a low-cost, clay-based thermal energy storage solution designed for off-grid processing.
+            </p>
+            <div class="pt-4 flex justify-between items-center border-t border-gray-100">
+                <span class="text-[9px] font-bold text-gray-400 uppercase tracking-widest">Nov 28, 2025</span>
+                <span class="text-brand text-xs font-black">&rarr;</span>
+            </div>
+        </div>
+      </a>
+
+      <a href="dispatch-detail.html" class="news-card group block">
+        <div class="relative h-56 bg-gray-100 rounded-2xl overflow-hidden mb-6">
+            
+            <div class="absolute top-4 left-4">
+                <span class="px-2 py-1 bg-dark text-white text-[8px] font-mono font-bold rounded uppercase">Log #040</span>
+            </div>
+        </div>
+        <div class="space-y-3">
+            <span class="text-[10px] font-mono text-brand font-bold uppercase tracking-widest">Community // Education</span>
+            <h3 class="news-title text-lg font-black uppercase tracking-tight leading-tight transition-colors">
+                Inaugural 'MEC Scholars' Fellowship Cohort Announced
+            </h3>
+            <p class="text-xs text-muted leading-relaxed line-clamp-3">
+                Selecting from 1,200 applicants, the Foundation welcomes 15 new research fellows to the Ogun State hub for the 2026 academic cycle.
+            </p>
+            <div class="pt-4 flex justify-between items-center border-t border-gray-100">
+                <span class="text-[9px] font-bold text-gray-400 uppercase tracking-widest">Oct 05, 2025</span>
+                <span class="text-brand text-xs font-black">&rarr;</span>
+            </div>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="mt-20 flex justify-center gap-4">
+        <button class="w-10 h-10 flex items-center justify-center rounded border border-gray-200 text-gray-400 hover:border-brand hover:text-brand transition">&larr;</button>
+        <button class="w-10 h-10 flex items-center justify-center rounded border border-brand bg-brand text-white text-[10px] font-bold">1</button>
+        <button class="w-10 h-10 flex items-center justify-center rounded border border-gray-200 text-dark text-[10px] font-bold hover:border-brand transition">2</button>
+        <button class="w-10 h-10 flex items-center justify-center rounded border border-gray-200 text-gray-400 hover:border-brand hover:text-brand transition">&rarr;</button>
+    </div>
+  </div>
+</section>
+
+<section class="py-24 bg-dark text-white relative">
+    <div class="absolute inset-0 opacity-5 bg-grid"></div>
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+            <h2 class="text-4xl font-black uppercase tracking-tighter text-brand mb-6">Press Resources</h2>
+            <p class="text-gray-400 leading-relaxed mb-10">
+                Journalists and media partners can download our official media kit, which includes high-resolution photography, institutional brand assets, and spokesperson profiles.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <a href="#" class="px-8 py-4 bg-brand text-dark font-black uppercase tracking-widest text-xs rounded hover:bg-white transition">Download Media Kit (.ZIP)</a>
+                <a href="contact.html" class="px-8 py-4 border border-white/20 text-white font-black uppercase tracking-widest text-xs rounded hover:bg-white hover:text-dark transition">Contact Press Office</a>
+            </div>
+        </div>
+        <div class="p-10 border border-white/10 bg-white/5 rounded-3xl blueprint-corner hidden lg:block">
+            <span class="text-[10px] font-mono text-brand font-bold uppercase block mb-4">Media Inquiry Protocol //</span>
+            <p class="text-sm text-gray-300 leading-relaxed italic">
+                "We prioritize transparent communication regarding our research outcomes. For urgent inquiries regarding field deployment or technical papers, please reference the Dispatch Serial Number."
+            </p>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-dark text-gray-300 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-6 py-20">
+        <div class="grid md:grid-cols-4 lg:grid-cols-5 gap-12 lg:gap-16">
+            
+            <div class="md:col-span-4 lg:col-span-2">
+                <h3 class="text-white font-black text-2xl uppercase tracking-tighter">
+                    Emperor <span class="text-brand">MEC.</span>
+                </h3>
+                <p class="mt-6 text-[10px] leading-relaxed uppercase tracking-[0.2em] font-bold text-gray-500 max-w-sm">
+                    An independent STEM research foundation advancing indigenous innovation and industrial-scale engineering through cross-disciplinary laboratory excellence.
+                </p>
+                <div class="mt-8 flex gap-6">
+                    <a href="#" class="text-gray-500 hover:text-brand transition text-[10px] font-mono font-bold uppercase tracking-widest">Facebook</a>
+                    <a href="#" class="text-gray-500 hover:text-brand transition text-[10px] font-mono font-bold uppercase tracking-widest">X (Twitter)</a>
+                    <a href="#" class="text-gray-500 hover:text-brand transition text-[10px] font-mono font-bold uppercase tracking-widest">Instagram</a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="text-white text-[10px] font-mono font-bold uppercase tracking-[0.3em] mb-8 text-brand">Institutional //</h4>
+                <ul class="space-y-4 text-[10px] font-bold uppercase tracking-[0.15em]">
+                    <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                    <li><a href="governance.html" class="hover:text-white transition">Governance</a></li>
+                    <li><a href="partnerships.html" class="hover:text-white transition">Partnerships</a></li>
+                    <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="text-white text-[10px] font-mono font-bold uppercase tracking-[0.3em] mb-8 text-brand">Laboratory //</h4>
+                <ul class="space-y-4 text-[10px] font-bold uppercase tracking-[0.15em]">
+                    <li><a href="research.html" class="hover:text-white transition">Research</a></li>
+                    <li><a href="facilities.html" class="hover:text-white transition">Facilities</a></li>
+                    <li><a href="fellowships.html" class="hover:text-white transition">Fellowships</a></li>
+                    <li><a href="impact.html" class="hover:text-white transition">Impact</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="text-white text-[10px] font-mono font-bold uppercase tracking-[0.3em] mb-8 text-brand">Archives //</h4>
+                <ul class="space-y-4 text-[10px] font-bold uppercase tracking-[0.15em]">
+                    <li><a href="dispatches.html" class="hover:text-white transition">Dispatches</a></li>
+                    <li><a href="report.html" class="hover:text-white transition">Annual Report</a></li>
+                    <li><a href="#" class="hover:text-white transition">Compliance</a></li>
+                    <li><a href="#" class="hover:text-white transition">Ethics</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        
+        <div class="mt-20 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-6">
+                <div class="px-4 py-2 border border-white/10 rounded flex items-center gap-3">
+                    <div class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse shadow-[0_0_8px_rgba(34,197,94,0.6)]"></div>
+                    <span class="text-[9px] font-mono font-bold text-gray-500 uppercase tracking-widest">Systems: Operational</span>
+                </div>
+                <div class="hidden md:block h-4 w-[1px] bg-white/10"></div>
+                <span class="text-[9px] font-mono text-gray-600 uppercase tracking-widest">Ref: OG-HUB-S26</span>
+            </div>
+            
+            <div class="text-[10px] font-mono font-bold uppercase tracking-[0.3em] text-gray-600">
+                © 2026 Emperor MEC. Foundation <span class="hidden md:inline mx-4">//</span> <span class="text-gray-700">All Intellectual Property Reserved</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
